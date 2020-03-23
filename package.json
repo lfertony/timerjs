@@ -1,0 +1,23 @@
+{
+  "name": "timerjs",
+  "version": "1.0.0",
+  "description": "This a simple countdown in javascript",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon  ./countdownJS/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lfertony/timerjs.git"
+  },
+  "author": "Lucas Ferreira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lfertony/timerjs/issues"
+  },
+  "homepage": "https://github.com/lfertony/timerjs#readme",
+  "dependencies": {
+    "nodemon": "^2.0.2"
+  }
+}

@@ -4,10 +4,10 @@ const port = 3000;
 
 const server = http.createServer(function (req,res){
     res.writeHead(200, { 'Content-Type': 'text/html' })
-    fs.readFile('index.html', function(error, data) {
+    fs.readFile('/c/Users/LucasFerreiraPinto/Downloads/JobMQ/Docker/nodegeek/TimerDe/compose_files/index.html', function(error, data) {
      if (error) {
         res.writeHead(404);
-        res.write('Error: File Not Found');        
+        res.write('Error: File Not Found',error);        
      } else {
         res.write(data);      
       }
@@ -17,8 +17,8 @@ const server = http.createServer(function (req,res){
 
 server.listen(port, function(error){
     if (error){
-        console.log('Something went wrong', error);
+        console.log('Something went wrong ' + error);
     }else{
-        console.log('Server is running on port: ' + port);
+        console.log('kai Server is running on port: ' + port);
     }
 })
